@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Battle">
+      <UniqueIdentifier>{45cb9711-206a-498f-be3d-a0852095256b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Battle">
+      <UniqueIdentifier>{e7b37bc5-10e7-4005-b600-46c66523fe61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Battle\TrainerAI">
+      <UniqueIdentifier>{484bbc60-bb48-44c3-b013-6aa5bfb45233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Battle\RecordedBattle">
+      <UniqueIdentifier>{e4b9fbc0-7430-447d-b631-807dc73bdaca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data">
+      <UniqueIdentifier>{074d6c2b-e0c7-45a8-b6b3-bf74d767c352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Statuses">
+      <UniqueIdentifier>{fcf3fd25-62fc-47ca-93eb-536a0d573d40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Natures">
+      <UniqueIdentifier>{f6e491dc-6e22-44d0-906e-809f96f9acd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Stats">
+      <UniqueIdentifier>{ecb0ec82-7260-4eb3-9fec-33f21e78a4b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Targets">
+      <UniqueIdentifier>{a19f8c98-e738-484e-909d-b20d7d751ad2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Experience">
+      <UniqueIdentifier>{ba676555-648e-42f2-a63b-7b6b9f42c5f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Ribbons">
+      <UniqueIdentifier>{2644b1c3-3079-4e19-b2f8-04c94e6805a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Egg Groups">
+      <UniqueIdentifier>{9db50865-76e8-4a54-8c00-5a1b5a040245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Terrain">
+      <UniqueIdentifier>{aa2ed6c4-6354-4fa1-b832-75a94949660e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Colors">
+      <UniqueIdentifier>{dad32e61-9f99-40f6-8794-cd5b0903d780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Environments">
+      <UniqueIdentifier>{d653fb22-0800-424c-8cd4-6317b4bc601e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Weather">
+      <UniqueIdentifier>{d14f6585-bec3-451d-8a16-4dbd03d62bf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Effects">
+      <UniqueIdentifier>{1fb5b192-c08d-4f6f-8a82-ad100cf6b100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Move">
+      <UniqueIdentifier>{0bb9d116-e416-4ca5-b48d-1a9164f1889b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Types">
+      <UniqueIdentifier>{2dc51158-a1c8-4a50-a1df-004773a52242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Pokemon">
+      <UniqueIdentifier>{393b8070-0cc1-4666-b2cc-2f8edce19230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Items">
+      <UniqueIdentifier>{2b4eaa02-4229-428c-974e-482c74914c8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Mail">
+      <UniqueIdentifier>{e6d959d7-5889-4258-86f0-443dca5a7cd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Encounters">
+      <UniqueIdentifier>{afafecb4-1b17-4dc8-b321-7559547feaba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Evolution">
+      <UniqueIdentifier>{79600f79-a6c7-4758-92cd-8c8345606c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO">
+      <UniqueIdentifier>{d0d59521-bd86-43c4-b034-00bf0dde6622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO\Input">
+      <UniqueIdentifier>{e921ab5c-d221-4988-acca-f2ff799a24a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO\Output">
+      <UniqueIdentifier>{e3826489-99c4-4b7a-a625-69058175417d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO\Output\Graphics">
+      <UniqueIdentifier>{66fb0351-c07f-4e7d-98b6-71d19f984b89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO\Output\Audio">
+      <UniqueIdentifier>{e7cbf536-70d9-4401-9fd0-101ff41b569f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Trainers">
+      <UniqueIdentifier>{f0d85151-7687-43ff-aed4-97ea673c0c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Metadata">
+      <UniqueIdentifier>{dd947282-adfb-4eae-92fc-0caca7b4c326}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActiveSide.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Battle.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="ActiveField.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="DamageState.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="SuccessState.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Battler.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="TrainerAI.h">
+      <Filter>Header Files\Battle\TrainerAI</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleMove.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="SafariZone.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="FakeBattler.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="BattlePalace.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleArena.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="BattlePeer.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="NullBattlePeer.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="RealBattlePeer.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="RecordedBattle.h">
+      <Filter>Header Files\Battle\RecordedBattle</Filter>
+    </ClInclude>
+    <ClInclude Include="Natures.h">
+      <Filter>Header Files\Data\Natures</Filter>
+    </ClInclude>
+    <ClInclude Include="Experience.h">
+      <Filter>Header Files\Data\Experience</Filter>
+    </ClInclude>
+    <ClInclude Include="settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Items.h">
+      <Filter>Header Files\Data\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Trainer.h">
+      <Filter>Header Files\Data\Trainers</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokemon.h">
+      <Filter>Header Files\Data\Pokemon</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
