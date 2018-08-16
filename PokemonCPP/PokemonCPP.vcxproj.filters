@@ -112,6 +112,9 @@
     <Filter Include="Source Files\IO\Output">
       <UniqueIdentifier>{9b1b6652-a7e4-4e4e-a621-a2dd9c798d84}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\IO\Output\Graphics">
+      <UniqueIdentifier>{204fc5b5-6acc-4cc2-8a2a-1077f7510e3c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -127,6 +130,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BattlerInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RPGSprite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -210,6 +219,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BattlerInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RPGSprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
