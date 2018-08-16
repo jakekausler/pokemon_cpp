@@ -1,0 +1,10 @@
+﻿  BattlerInfo.cpp
+  ConsoleObject.cpp
+c:\users\jakek\source\repos\pokemon_cpp\pokemoncpp\consoleobject.cpp(36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  ConsoleWindow.cpp
+  FightCommandMenu.cpp
+  Main.cpp
+c:\users\jakek\source\repos\pokemon_cpp\pokemoncpp\main.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\jakek\source\repos\pokemon_cpp\pokemoncpp\main.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  PokemonCPP.vcxproj -> C:\Users\jakek\source\repos\pokemon_cpp\x64\Debug\PokemonCPP.exe

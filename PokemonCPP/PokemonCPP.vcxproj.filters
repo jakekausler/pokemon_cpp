@@ -106,9 +106,27 @@
     <Filter Include="Header Files\Metadata">
       <UniqueIdentifier>{dd947282-adfb-4eae-92fc-0caca7b4c326}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\IO">
+      <UniqueIdentifier>{34bdf50c-505b-4f87-b850-a8de29d74e29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IO\Output">
+      <UniqueIdentifier>{9b1b6652-a7e4-4e4e-a621-a2dd9c798d84}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleWindow.cpp">
+      <Filter>Source Files\IO\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleObject.cpp">
+      <Filter>Source Files\IO\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="FightCommandMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BattlerInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -179,5 +197,25 @@
     <ClInclude Include="Pokemon.h">
       <Filter>Header Files\Data\Pokemon</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleWindow.h">
+      <Filter>Header Files\IO\Output</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleObject.h">
+      <Filter>Header Files\IO\Output</Filter>
+    </ClInclude>
+    <ClInclude Include="FightCommandMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BattlerInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PokemonCPP.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

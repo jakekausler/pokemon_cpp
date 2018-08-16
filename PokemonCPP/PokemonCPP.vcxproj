@@ -115,6 +115,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BattlerInfo.cpp" />
+    <ClCompile Include="ConsoleObject.cpp" />
+    <ClCompile Include="ConsoleWindow.cpp" />
+    <ClCompile Include="FightCommandMenu.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -126,20 +130,28 @@
     <ClInclude Include="BattlePalace.h" />
     <ClInclude Include="BattlePeer.h" />
     <ClInclude Include="Battler.h" />
+    <ClInclude Include="BattlerInfo.h" />
+    <ClInclude Include="ConsoleObject.h" />
+    <ClInclude Include="ConsoleWindow.h" />
     <ClInclude Include="DamageState.h" />
     <ClInclude Include="Experience.h" />
     <ClInclude Include="FakeBattler.h" />
+    <ClInclude Include="FightCommandMenu.h" />
     <ClInclude Include="Pokemon.h" />
     <ClInclude Include="Items.h" />
     <ClInclude Include="Natures.h" />
     <ClInclude Include="RecordedBattle.h" />
     <ClInclude Include="NullBattlePeer.h" />
     <ClInclude Include="RealBattlePeer.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="SafariZone.h" />
     <ClInclude Include="settings.h" />
     <ClInclude Include="SuccessState.h" />
     <ClInclude Include="Trainer.h" />
     <ClInclude Include="TrainerAI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PokemonCPP.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
