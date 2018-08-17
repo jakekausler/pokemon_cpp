@@ -2,6 +2,7 @@
 #include <SDL_Image.h>
 #include <stdio.h>
 #include <stdexcept>
+#include "Sprite.h"
 
 using namespace std;
 
@@ -74,13 +75,39 @@ void tearDown() {
 	SDL_Quit();
 }
 
+enum Direction {
+	SOUTH, WEST, EAST, NORTH
+};
+
 int main(int argc, char *argv[]) {
 
 	//Start up SDL and create window
 	init();
 
+	Sprite sprite(gRenderer);
+	sprite.LoadTexture("res/Graphics/Characters/NPC 19.png");
+
+	const int ANIMATION_RATE = 8;
+	const int TILE_WIDTH = 32;
+	const int TILE_HEIGHT = 48;
+	const int START_COLUMN = 0;
+	const int NUM_SLIDES = 4;
+	const int SPEED = 8;
+
+	SDL_Rect viewport = { 0, 0, TILE_WIDTH, TILE_HEIGHT };
+
+	sprite.ChangeViewport(&viewport);
+
+	Direction direction = EAST;
+	sprite.Animate(ANIMATION_RATE, TILE_HEIGHT, TILE_WIDTH, direction, START_COLUMN, NUM_SLIDES);
+
+	SDL_Color flashColor{ 0xFF, 0x00, 0x00 };
+	//sprite.Flash(&flashColor, 16);
+
 	//Main loop flag
 	bool quit = false;
+
+	int frame = 0;
 
 	//Event handler
 	SDL_Event e;
@@ -102,9 +129,49 @@ int main(int argc, char *argv[]) {
 		SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
 		SDL_RenderClear(gRenderer);
 
+		frame++;
+
+		sprite.Update();
+
+		if (frame % ANIMATION_RATE == 0) {
+			switch (direction) {
+			case SOUTH:
+				viewport.y += SPEED;
+				if (viewport.y > SCREEN_HEIGHT - SPEED - TILE_HEIGHT + 1) {
+					direction = WEST;
+					sprite.Animate(ANIMATION_RATE, TILE_HEIGHT, TILE_WIDTH, direction, START_COLUMN, NUM_SLIDES);
+				}
+				break;
+			case NORTH:
+				viewport.y -= SPEED;
+				if (viewport.y < SPEED) {
+					direction = EAST;
+					sprite.Animate(ANIMATION_RATE, TILE_HEIGHT, TILE_WIDTH, direction, START_COLUMN, NUM_SLIDES);
+				}
+				break;
+			case EAST:
+				viewport.x += SPEED;
+				if (viewport.x > SCREEN_WIDTH - SPEED - TILE_WIDTH + 1) {
+					direction = SOUTH;
+					sprite.Animate(ANIMATION_RATE, TILE_HEIGHT, TILE_WIDTH, direction, START_COLUMN, NUM_SLIDES);
+				}
+				break;
+			case WEST:
+				viewport.x -= SPEED;
+				if (viewport.x < SPEED) {
+					direction = NORTH;
+					sprite.Animate(ANIMATION_RATE, TILE_HEIGHT, TILE_WIDTH, direction, START_COLUMN, NUM_SLIDES);
+				}
+				break;
+			}
+		}
+
+
 		//Update screen
 		SDL_RenderPresent(gRenderer);
 	}
+
+	sprite.Free();
 
 	//Free Everything
 	tearDown();

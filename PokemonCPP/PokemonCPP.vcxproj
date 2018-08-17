@@ -135,7 +135,6 @@
     <ClCompile Include="ConsoleWindow.cpp" />
     <ClCompile Include="FightCommandMenu.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="RPGSprite.cpp" />
     <ClCompile Include="Sprite.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -161,7 +160,6 @@
     <ClInclude Include="NullBattlePeer.h" />
     <ClInclude Include="RealBattlePeer.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="RPGSprite.h" />
     <ClInclude Include="SafariZone.h" />
     <ClInclude Include="settings.h" />
     <ClInclude Include="Sprite.h" />
