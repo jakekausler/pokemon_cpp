@@ -3,28 +3,26 @@
 #include <string>
 #include "ConsoleObject.h"
 
-namespace IO {
-	namespace Output {
-		using std::vector;
-		using std::string;
+namespace ConsoleOutput {
+	using std::vector;
+	using std::string;
 		
-		class ConsoleObject;
+	class ConsoleObject;
 
-		class ConsoleWindow {
-		private:
-			const int width;
-			const int height;
+	class ConsoleWindow {
+	private:
+		const int width;
+		const int height;
 
-			vector<ConsoleObject> objects;
+		vector<ConsoleObject> objects;
 
-		public:
-			ConsoleWindow(int w, int h);
+	public:
+		ConsoleWindow(int w, int h);
 
-			void clear();
+		void clear();
 
-			void addObject(ConsoleObject obj);
+		void addObject(ConsoleObject obj);
 
-			friend std::ostream& operator<< (std::ostream &out, const ConsoleWindow &win);
-		};
-	}
+		friend std::ostream& operator<< (std::ostream &out, const ConsoleWindow &win);
+	};
 }

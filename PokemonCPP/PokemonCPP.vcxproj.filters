@@ -19,12 +19,6 @@
     <Filter Include="Header Files\Battle">
       <UniqueIdentifier>{e7b37bc5-10e7-4005-b600-46c66523fe61}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Battle\TrainerAI">
-      <UniqueIdentifier>{484bbc60-bb48-44c3-b013-6aa5bfb45233}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Battle\RecordedBattle">
-      <UniqueIdentifier>{e4b9fbc0-7430-447d-b631-807dc73bdaca}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Data">
       <UniqueIdentifier>{074d6c2b-e0c7-45a8-b6b3-bf74d767c352}</UniqueIdentifier>
     </Filter>
@@ -49,9 +43,6 @@
     <Filter Include="Header Files\Data\Egg Groups">
       <UniqueIdentifier>{9db50865-76e8-4a54-8c00-5a1b5a040245}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Data\Terrain">
-      <UniqueIdentifier>{aa2ed6c4-6354-4fa1-b832-75a94949660e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Data\Colors">
       <UniqueIdentifier>{dad32e61-9f99-40f6-8794-cd5b0903d780}</UniqueIdentifier>
     </Filter>
@@ -63,9 +54,6 @@
     </Filter>
     <Filter Include="Header Files\Data\Effects">
       <UniqueIdentifier>{1fb5b192-c08d-4f6f-8a82-ad100cf6b100}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Data\Move">
-      <UniqueIdentifier>{0bb9d116-e416-4ca5-b48d-1a9164f1889b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Data\Types">
       <UniqueIdentifier>{2dc51158-a1c8-4a50-a1df-004773a52242}</UniqueIdentifier>
@@ -115,6 +103,24 @@
     <Filter Include="Source Files\IO\Output\Graphics">
       <UniqueIdentifier>{204fc5b5-6acc-4cc2-8a2a-1077f7510e3c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Data">
+      <UniqueIdentifier>{d898a7e8-30df-4b33-a42f-320c3b693cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Experience">
+      <UniqueIdentifier>{6193a5bc-ffc0-4d5e-868f-58e00b5a5f06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Targets">
+      <UniqueIdentifier>{48def91a-2761-4af1-aa09-ffc8bb47c59f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Terrains">
+      <UniqueIdentifier>{433a76ea-d805-43d0-9fca-213505f030c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Terrains">
+      <UniqueIdentifier>{aa2ed6c4-6354-4fa1-b832-75a94949660e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Moves">
+      <UniqueIdentifier>{0bb9d116-e416-4ca5-b48d-1a9164f1889b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -126,17 +132,23 @@
     <ClCompile Include="ConsoleObject.cpp">
       <Filter>Source Files\IO\Output</Filter>
     </ClCompile>
-    <ClCompile Include="FightCommandMenu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="BattlerInfo.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\IO\Output</Filter>
     </ClCompile>
     <ClCompile Include="Sprite.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\IO\Output\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="RPGSprite.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="FightCommandMenu.cpp">
+      <Filter>Source Files\IO\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="Experience.cpp">
+      <Filter>Source Files\Data\Experience</Filter>
+    </ClCompile>
+    <ClCompile Include="Targets.cpp">
+      <Filter>Source Files\Data\Targets</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrains.cpp">
+      <Filter>Source Files\Data\Terrains</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -157,9 +169,6 @@
     </ClInclude>
     <ClInclude Include="Battler.h">
       <Filter>Header Files\Battle</Filter>
-    </ClInclude>
-    <ClInclude Include="TrainerAI.h">
-      <Filter>Header Files\Battle\TrainerAI</Filter>
     </ClInclude>
     <ClInclude Include="BattleMove.h">
       <Filter>Header Files\Battle</Filter>
@@ -185,9 +194,6 @@
     <ClInclude Include="RealBattlePeer.h">
       <Filter>Header Files\Battle</Filter>
     </ClInclude>
-    <ClInclude Include="RecordedBattle.h">
-      <Filter>Header Files\Battle\RecordedBattle</Filter>
-    </ClInclude>
     <ClInclude Include="Natures.h">
       <Filter>Header Files\Data\Natures</Filter>
     </ClInclude>
@@ -206,26 +212,62 @@
     <ClInclude Include="Pokemon.h">
       <Filter>Header Files\Data\Pokemon</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ConsoleWindow.h">
       <Filter>Header Files\IO\Output</Filter>
     </ClInclude>
     <ClInclude Include="ConsoleObject.h">
       <Filter>Header Files\IO\Output</Filter>
     </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files\IO\Output\Graphics</Filter>
+    </ClInclude>
     <ClInclude Include="FightCommandMenu.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\IO\Output</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TrainerAI.h">
+      <Filter>Header Files\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="RecordedBattle.h">
+      <Filter>Header Files\Battle</Filter>
     </ClInclude>
     <ClInclude Include="BattlerInfo.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\IO\Output</Filter>
     </ClInclude>
-    <ClInclude Include="Sprite.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Colors.h">
+      <Filter>Header Files\Data\Colors</Filter>
     </ClInclude>
-    <ClInclude Include="RPGSprite.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Effects.h">
+      <Filter>Header Files\Data\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="EggGroups.h">
+      <Filter>Header Files\Data\Egg Groups</Filter>
+    </ClInclude>
+    <ClInclude Include="Environments.h">
+      <Filter>Header Files\Data\Environments</Filter>
+    </ClInclude>
+    <ClInclude Include="Ribbons.h">
+      <Filter>Header Files\Data\Ribbons</Filter>
+    </ClInclude>
+    <ClInclude Include="Stas.h">
+      <Filter>Header Files\Data\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="Statuses.h">
+      <Filter>Header Files\Data\Statuses</Filter>
+    </ClInclude>
+    <ClInclude Include="Targets.h">
+      <Filter>Header Files\Data\Targets</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrains.h">
+      <Filter>Header Files\Data\Terrains</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>Header Files\Data\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="Moves.h">
+      <Filter>Header Files\Data\Moves</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
