@@ -1,4 +1,7 @@
 .vs/
 Debug/
-x64/Debug
+x64/
+x86/
 PokemonCPP/Debug/
+PokemonCPP/x86/
+PokemonCPP/x64
