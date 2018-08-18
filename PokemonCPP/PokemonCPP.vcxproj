@@ -133,9 +133,12 @@
     <ClCompile Include="BattlerInfo.cpp" />
     <ClCompile Include="ConsoleObject.cpp" />
     <ClCompile Include="ConsoleWindow.cpp" />
+    <ClCompile Include="Experience.cpp" />
     <ClCompile Include="FightCommandMenu.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Targets.cpp" />
+    <ClCompile Include="Terrains.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ActiveSide.h" />
@@ -150,9 +153,15 @@
     <ClInclude Include="ConsoleObject.h" />
     <ClInclude Include="ConsoleWindow.h" />
     <ClInclude Include="DamageState.h" />
+    <ClInclude Include="Effects.h" />
+    <ClInclude Include="EggGroups.h" />
+    <ClInclude Include="Environments.h" />
     <ClInclude Include="Experience.h" />
     <ClInclude Include="FakeBattler.h" />
     <ClInclude Include="FightCommandMenu.h" />
+    <ClInclude Include="Colors.h" />
+    <ClInclude Include="Moves.h" />
+    <ClInclude Include="Stas.h" />
     <ClInclude Include="Pokemon.h" />
     <ClInclude Include="Items.h" />
     <ClInclude Include="Natures.h" />
@@ -160,12 +169,17 @@
     <ClInclude Include="NullBattlePeer.h" />
     <ClInclude Include="RealBattlePeer.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Ribbons.h" />
     <ClInclude Include="SafariZone.h" />
     <ClInclude Include="settings.h" />
     <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Statuses.h" />
     <ClInclude Include="SuccessState.h" />
+    <ClInclude Include="Targets.h" />
+    <ClInclude Include="Terrains.h" />
     <ClInclude Include="Trainer.h" />
     <ClInclude Include="TrainerAI.h" />
+    <ClInclude Include="Types.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="PokemonCPP.rc" />

@@ -8,7 +8,6 @@
 #include <vector>
 
 namespace Settings{
-	using namespace Data;
 	using std::string;
 	using std::array;
 	using std::vector;
@@ -68,22 +67,23 @@ namespace Settings{
 	// newer Gens(true), or on its type as in older Gens(false).
 	const bool USE_MOVE_CATEGORY = true;
 	// Whether the battle mechanics mimic Gen 6 (true) or Gen 5 (false).
-	const bool USE_MOVE_CATEGORY = true;
+	const bool USE_NEW_BATTLE_MECHANICS = false;
 	// Whether the Exp gained from beating a Pokémon should be scaled depending on
 	// gainer's level as in Gen 5 (true), or not as in other Gens (false).
-	const bool USE_MOVE_CATEGORY = true;
+	const bool USE_SCALED_EXP_FORMULA = true;
 	// Whether the Exp gained from beating a Pokémon should be divided equally
 	// between each participant(false), or whether each participant should gain
 	// that much Exp.This also applies to Exp gained via the Exp Share(held
 	// item version) being distributed to all Exp Share holders.This is true in
 	// Gen 6 and false otherwise.
-	const bool USE_MOVE_CATEGORY = true;
+	const bool NO_SPLIT_EXP = false;
 	// Whether the critical capture mechanic applies (true) or not (false). Note
 	// that it is based on a total of 600 + species(i.e.that many species need
 	// to be caught to provide the greatest critical capture chance of 2.5x),
 	// and there may be fewer species in your game.
-	const bool USE_MOVE_CATEGORY = true;
+	const bool USE_CRITICAL_CAPTURE = false;
 	// Whether Pokémon gain Exp for capturing a Pokémon (true) or not (false).
+	const bool GAIN_EXP_FOR_CAPTURE = false;
 	// An array of items which act as Mega Rings for the player (NPCs don't need a
 	// Mega Ring item, just a Mega Stone).
 	const array<Items::Item, 4> MEGA_RINGS = {
@@ -225,7 +225,7 @@ namespace Settings{
 	const map<Pokemon::Species, int> ROAMING_SWITCHES = {};
 	const map<Pokemon::Species, int> ROAMING_TYPES = {};
 	const map<Pokemon::Species, string> ROAMING_BGMS = {};
-	const map<Pokemon::Species, map<int, vector<int>>> ROAMING_AREAS = {};
+	const map<Pokemon::Species, map<int, vector<int>>> ROAMING_POKEMON_AREAS = {};
 
 	// A set of arrays each containing details of a wild encounter that can only
 	// occur via using the PokÃ© Radar.The information within is as follows :
@@ -257,7 +257,7 @@ namespace Settings{
 	// The number of steps allowed before a Safari Zone game is over (0=infinite).
 	const int SAFARI_STEPS = 600;
 	// The number of seconds a Bug Catching Contest lasts for (0=infinite).
-	const BUG_CONTEST_TIME = 1200;
+	const int BUG_CONTEST_TIME = 1200;
 
 	// The Global Switch that is set to ON when the player whites out.
 	const int STARTING_OVER_SWITCH = 1;
